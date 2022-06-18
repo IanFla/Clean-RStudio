@@ -1,4 +1,4 @@
-tmp <- "default <- 11
+cc <- parse(text="default <- 11
     len <- length(search())
     if(len > default){
         for(i in 1:(len - default)){
@@ -7,8 +7,7 @@ tmp <- "default <- 11
     } # clean the packages
     graphics.off() # close all graphics
     rm(list=ls()) # clean the environment
-    cat('\f') # clean the console"
-cc <- parse(text = tmp)
+    cat('\f') # clean the console")
 
 
 if(1 == 0){
