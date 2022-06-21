@@ -6,6 +6,6 @@ Author: Ian
 Maintainer: Ian <yanz971107@163.com>
 Description: Load the package when open RStudio. 
              Clean everything via "eval(cc::cc)". 
-License: MIT
+License: What license is it under?
 Encoding: UTF-8
 LazyData: true
