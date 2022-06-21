@@ -1,4 +1,4 @@
-cc <- parse(text="default <- 11
+cc <- parse(text="default <- 10
     len <- length(search())
     if(len > default){
         for(i in 1:(len - default)){
