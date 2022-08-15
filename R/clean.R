@@ -1,8 +1,12 @@
-cc <- parse(text="default <- 10
-    len <- length(search())
-    if(len > default){
-        for(i in 1:(len - default)){
-            detach(pos=2)
+cc <- parse(text="
+    default <- c('.GlobalEnv', 'tools:rstudio',
+                 'package:stats', 'package:graphics',
+                 'package:grDevices', 'package:utils',
+                 'package:datasets', 'package:methods',
+                 'Autoloads', 'package:base')
+    for (p in search()) {
+        if (!(p %in% default)) {
+            detach(pos=which(p == search()))
         }
     } # clean the packages
     graphics.off() # close all graphics
