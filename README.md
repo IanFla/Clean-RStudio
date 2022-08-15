@@ -8,5 +8,4 @@ Clean your RStudio
 4. Packages. 
 
 # Installation: 
-install.packages("devtools")
-devtools::install_github('IanFla/Clean-RStudio')
+install.packages("devtools") + devtools::install_github('IanFla/Clean-RStudio')
